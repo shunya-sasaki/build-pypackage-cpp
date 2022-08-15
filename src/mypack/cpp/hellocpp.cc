@@ -19,5 +19,6 @@ void hello_cpp()
 
 // The argument of BOOST_PYTHON_MODULE must be same to module name.
 BOOST_PYTHON_MODULE(cpp){
+    Py_Initialize();
     python::def("hello_cpp", hello_cpp);
 }
